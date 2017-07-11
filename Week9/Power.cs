@@ -5,7 +5,7 @@ using System.Text;
 /*Rosa Munguia
  Date: July 11 2017
  Description: Created power class
- Version: 0.1- Created for power class
+ Version: 0.2- Created for power class
  */
 namespace Week9
 {/// <summary>
@@ -18,10 +18,16 @@ namespace Week9
         public string Name { get; set; }
         public int Rank { get; set; }
         //constructors
-
-        public SuperHuman(string name) :base(name)
+        /// <summary>
+        /// This is the main constructor for the power class.
+        /// It takes two srguments-name(string), rank(int)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="Rank"></param>
+        public Power(string name, int Rank)
         {
-
+            this.Name = name;
+            this.Rank = Rank;
         }
      
     }

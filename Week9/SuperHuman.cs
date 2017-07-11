@@ -18,6 +18,13 @@ namespace Week9
         private List<Power> _powers;
 
         //public properties
+        public List<Power> Powers
+        {
+            get
+            {
+                return this._powers;//this returns a reference
+            }
+        }
 
         //constructors
         /// <summary>
