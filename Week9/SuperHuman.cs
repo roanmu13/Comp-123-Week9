@@ -5,7 +5,7 @@ using System.Text;
 /*Rosa Munguia
  Date: July 11 2017
  Description: Super Human class that extends abstract human class
- Version: 0.3- Add AddPower method
+ Version: 0.4- Add DisplayPpowers method
  */
 namespace Week9
 {
@@ -54,6 +54,16 @@ namespace Week9
         public void AddPower(string name, int rank)
         {
             this.Powers.Add(new Power(name, rank));
+        }
+        /// <summary>
+        /// This method displays each of the poers stored in the powers list
+        /// </summary>
+        public void DisplayPowers()
+        {
+            foreach (Power power in this.Powers)
+            {
+                Console.WriteLine("Power: " + power + "Rank: " + power.Rank);
+            }
         }
     }
 }
