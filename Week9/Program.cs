@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /*Rosa Munguia
  Date: July 11 2017
  Description: Demo for Lesson 9
- Version: 0.2- Instantiated a new object of type SuperHuman
+ Version: 0.3- Added a power to the SuperHuman object
  */
 namespace Week9
 {
@@ -15,7 +15,7 @@ namespace Week9
         static void Main(string[] args)
         {
             SuperHuman superHuman = new SuperHuman("Super Dude");
-            superHuman.Powers.Add(new Power("Spider Climbing", 50));
+            superHuman.AddPower("Spider Climbing", 50);
         }
     }
 }
