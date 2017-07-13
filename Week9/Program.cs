@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 /*Rosa Munguia
- Date: July 11 2017
+ Date: July 13 2017
  Description: Demo for Lesson 9
- Version: 0.5- Implemented the toString method of the superhuman class
+ Version: 0.6- Added superVillain and powers
  */
 namespace Week9
 {
@@ -14,10 +14,18 @@ namespace Week9
     {
         static void Main(string[] args)
         {
-            SuperHuman superHuman = new SuperHuman("Super Dude");
-            superHuman.AddPower("Spider Climbing", 50);
-            superHuman.AddPower("Webcasting", 40);
-            Console.WriteLine(superHuman.ToString());
+            SuperHero superHero = new SuperHero("Super Dude", 20);
+            superHero.AddPower("Spider Climbing", 50);
+            superHero.AddPower("Webcasting", 40);
+            superHero.Powers.Add(new Power("Teleporting", 35));
+            Console.WriteLine(superHero.ToString());
+            Console.WriteLine("Karma points: " + superHero.Karma);
+
+            SuperVillain badMan = new SuperVillain("Evil Eye", 35);
+            badMan.AddPower("Fire Burst", 30);
+            badMan.AddPower("", 25);
+            Console.WriteLine(badMan.ToString());
+            Console.WriteLine("Karma points: " + badMan.Malice);
         }
     }
 }

@@ -30,7 +30,7 @@ namespace Week9
         }
         //Constructors
         /// <summary>
-        /// Thhis is the main constructor for the superhero class
+        /// This is the main constructor for the superhero class
         /// It takes one argument: name(string) and karma(int)
         /// </summary>
         /// <param name="name"></param>

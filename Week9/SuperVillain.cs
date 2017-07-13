@@ -28,6 +28,12 @@ namespace Week9 {
             }
         }
         //Constructors
+        /// <summary>
+        /// This is the main constructor for SuperVillain class
+        /// Takes two parameters- name(string) and malice(int)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="malice"></param>
         public SuperVillain(string name, int malice)
             :base (name)
         {

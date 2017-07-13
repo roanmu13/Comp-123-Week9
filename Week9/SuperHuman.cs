@@ -60,9 +60,9 @@ namespace Week9
         /// </summary>
         public void DisplayPowers()
         {
-            foreach (Power power in this.Powers)
+            foreach (var power in Powers)
             {
-                Console.WriteLine("Power: " + power + "Rank: " + power.Rank);
+                Console.WriteLine("Power: " + power.Name + "Rank: " + power.Rank);
             }
         }
         /// <summary>
@@ -78,7 +78,7 @@ namespace Week9
             outputString += "*****************************************************\n"; 
                 foreach (Power power in this.Powers)
             {
-                outputString += "Power: " + power.Name + " Rank: " + "\n";
+                outputString += "Power: " + power.Name + " Rank: " + power.Rank + "\n";
             }
             outputString += "*****************************************************\n";
             return outputString;
