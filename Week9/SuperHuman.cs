@@ -80,7 +80,7 @@ namespace Week9
             {
                 outputString += "Power: " + power.Name + " Rank: " + power.Rank + "\n";
             }
-            outputString += "*****************************************************\n";
+           // outputString += "*****************************************************\n";
             return outputString;
 
         }
