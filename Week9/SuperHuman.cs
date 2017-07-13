@@ -56,7 +56,7 @@ namespace Week9
             this.Powers.Add(new Power(name, rank));
         }
         /// <summary>
-        /// This method displays each of the poers stored in the powers list
+        /// This method displays each of the powers stored in the powers list
         /// </summary>
         public void DisplayPowers()
         {
