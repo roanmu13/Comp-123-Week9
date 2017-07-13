@@ -5,7 +5,7 @@ using System.Text;
 /*Rosa Munguia
  Date: July 11 2017
  Description: Super Human class that extends abstract human class
- Version: 0.4- Add DisplayPpowers method
+ Version: 0.5- Added the override toString method
  */
 namespace Week9
 {
@@ -64,6 +64,25 @@ namespace Week9
             {
                 Console.WriteLine("Power: " + power + "Rank: " + power.Rank);
             }
+        }
+        /// <summary>
+        /// The ToString method overrides the built-in object.ToString method. 
+        /// It outputs a string that displays the superhuman's name and thier power list
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            string outputString="";
+            outputString += "*****************************************************\n";
+            outputString += "Super Human Name: " + this.Name + "\n";
+            outputString += "*****************************************************\n"; 
+                foreach (Power power in this.Powers)
+            {
+                outputString += "Power: " + power.Name + "Rank: " + "\n";
+            }
+            outputString += "*****************************************************\n";
+            return outputString;
+
         }
     }
 }
