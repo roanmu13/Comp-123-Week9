@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 /*Rosa Munguia
  Date: July 11 2017
  Description: Demo for Lesson 9
- Version: 0.4- Added another power to the SuperHuman object
-              - Also displayed all the powers in the power list
+ Version: 0.5- Implemented the toString method of the superhuman class
  */
 namespace Week9
 {
@@ -18,7 +17,7 @@ namespace Week9
             SuperHuman superHuman = new SuperHuman("Super Dude");
             superHuman.AddPower("Spider Climbing", 50);
             superHuman.AddPower("Webcasting", 40);
-            superHuman.DisplayPowers();
+            Console.WriteLine(superHuman.ToString());
         }
     }
 }
