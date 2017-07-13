@@ -5,7 +5,7 @@ using System.Text;
 /*Rosa Munguia
  Date: July 11 2017
  Description: Abstract Human Class
- Version: 0.1- Created Abstract Human Class
+ Version: 0.2- Added Abstract method DisplaySkills
  */
  //use these comments for assignment 4
 namespace Week9
@@ -46,5 +46,7 @@ namespace Week9
         //Private Methods
 
         //Public Methods
+        public abstract void DisplaySkills();
+        
     }
 }
