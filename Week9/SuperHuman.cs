@@ -5,7 +5,7 @@ using System.Text;
 /*Rosa Munguia
  Date: July 11 2017
  Description: Super Human class that extends abstract human class
- Version: 0.6- Add space before Rank in toString method
+ Version: 0.7- Added the DisplaySkills stub method to satisfy the Human superclass requirements
  */
 namespace Week9
 {
@@ -83,6 +83,14 @@ namespace Week9
             outputString += "*****************************************************\n";
             return outputString;
 
+        }
+        /// <summary>
+        /// This method overrides the human abstract superclass's DisplaySkills method
+        /// This method will display a list of skills to the console
+        /// </summary>
+        public override void DisplaySkills()
+        {
+            Console.WriteLine("Not implemented");
         }
     }
 }
