@@ -5,7 +5,7 @@ using System.Text;
 /*Rosa Munguia
  Date: July 11 2017
  Description: Super Human class that extends abstract human class
- Version: 0.5- Added the override toString method
+ Version: 0.6- Add space before Rank in toString method
  */
 namespace Week9
 {
@@ -78,7 +78,7 @@ namespace Week9
             outputString += "*****************************************************\n"; 
                 foreach (Power power in this.Powers)
             {
-                outputString += "Power: " + power.Name + "Rank: " + "\n";
+                outputString += "Power: " + power.Name + " Rank: " + "\n";
             }
             outputString += "*****************************************************\n";
             return outputString;
