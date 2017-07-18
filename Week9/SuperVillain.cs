@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 /*Rosa Munguia
- Date: July 13 2017
+ Date: July 18 2017
  Description: Creating superVillain Class
- Version: 0.1- Added superHero child class
+ Version: 0.1- Updated constructor
  */
 namespace Week9 { 
     /// <summary>
@@ -37,7 +37,7 @@ namespace Week9 {
         public SuperVillain(string name, int malice)
             :base (name)
         {
-            this._malice = malice;
+            this.Malice = malice;
         }
     }
 }
